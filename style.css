@@ -1,0 +1,105 @@
+/**
+ * Style definitions used by the Formatting+ plugin.
+ *
+ * @author Tom N Harris <tnharris@whoopdedo.org>
+ */
+
+kbd {
+  font-family: monospace, serif;
+  font-style: normal;
+}
+
+samp {
+  font-family: monospace, serif;
+  text-decoration: underline;
+}
+
+var {
+  font-family: monospace, serif;
+  font-style: oblique;
+}
+
+dfn {
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+/* Small-caps style. Uses strong, but is not bold nor slanted. */
+strong.smallcaps {
+  font-weight: normal;
+  font-style: normal;
+  font-variant: small-caps;
+}
+
+/* Draw light-colored text on a dark background, or vice-versa. */
+em.inverse {
+  font-style: normal;
+  color: white;
+  background-color: black;
+}
+
+sub{
+}
+sup{
+}
+
+cite {
+}
+
+q {
+  quotes: '“' '”' '‘' '’';
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+
+blockquote.citation {
+  margin: 0 3em 1em;
+  padding: 3px;
+  border: 1px dotted __border__;
+  background: __background_alt__ url(images/blockquote.png) no-repeat 0.3em 0.3em;
+  color: black;
+  font-style: oblique;
+  overflow: auto;
+}
+blockquote.citation[title]:after {
+  font-size: 80%;
+  font-style: italic;
+  content: '—' attr(title);
+  display: block;
+  margin-left: 60%;
+  margin-top: 1em;
+  padding-left: 1em;
+}
+.citation_after {
+  font-size: 80%;
+  font-style: italic;
+  display: block;
+  margin-left: 60%;
+  margin-top: 1em;
+  padding-left: 1em;
+}
+
+ins{
+	text-decoration: underline;
+}
+del{
+	text-decoration: line-through;
+}
+
+ins.block{
+}
+del.block{
+}
+
+.inserted{
+	padding-right: 0.5em;
+	border-right: 0.5em solid #9e9;
+}
+.deleted{
+	padding-right: 0.5em;
+	border-right: 0.5em solid #e99;
+}

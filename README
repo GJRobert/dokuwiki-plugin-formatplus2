@@ -1,0 +1,79 @@
+====== Formatting+ Syntax ======
+
+There are many plugins that provide additional XHTML formatting for
+DokuWiki. But the syntax isn't always consistent or compatible with
+other plugins. I believed the best solution is a unified plugin.
+
+===== Usage =====
+
+A drop-down menu containing shortcuts for all the formatting styles
+is added to the edit toolbar.
+
+The inline formatting syntax is as follows:
+
+^     Style    ^   Syntax   ^    XHTML Tag            ^
+|     Variable | %%??..??%% | VAR                     |
+|   Definition | %%@@..@@%% | DFN                     |
+|     Citation | %%&&..&&%% | CITE                    |
+|     Keyboard | %%``..``%% | KBD                     |
+|     Citation | %%$$..$$%% | SAMP                    |
+|  Superscript | %%/^..^/%% | SUP                     |
+|    Subscript | %%/,..,/%% | SUB                     |
+|       Insert | %%/+..+/%% | INS CLASS=simple        |
+|       Delete | %%/-..-/%% | DEL CLASS=simple        |
+|      Inverse | %%/!..!/%% | EM CLASS=inverse        |
+|   Small-Caps | %%!!..!!%% | STRONG CLASS=smallcaps  |
+|        Quote | %%""..""%% | Q                       |
+
+There are three block formats:
+
+^      Style    ^       Syntax                      ^    XHTML Tag               ^
+|  Block Insert | %%<ins title =cite @date></ins>%% | INS CLASS=block            |
+|  Block Delete | %%<del title =cite @date></del>%% | DEL CLASS=block            |
+|   Block Quote | %%<quote cite></quote>%%          | BLOCKQUOTE CLASS=citation  |
+
+The block insert and delete styles will also wrap the text in a ''DIV''
+block with the class name ''inserted'' or ''deleted''. XHTML requires
+this to determine whether the tag is being used inline or as a block.
+
+The block styles, as well as the inline quote style, can have attributes.
+All attributes are optional. For inline quotes, the cite attribute can
+be specified like this: %%""=cite|..""%%
+
+The included stylesheet is intended for browsers that fully support CSS2.
+This does not include Microsoft Internet Explorer, however. The plugin
+outputs a JavaScript function that uses DHTML to compensate.
+
+===== Configuration =====
+
+The plugin allows you to disable individual styles. In the configuration
+manager, select the formatting styles that you do not want to use.
+If the option ''classic_del'' is selected, then DokuWiki's default
+block delete will be used when there are no attributes, but the syntax
+with attributes will be handled by the plugin.
+
+The editor buttons are added in a sub-menu of the toolbar. If the ''toplevel''
+option is set, then buttons are shown in the main toolbar.
+
+===== License =====
+
+This plugin is licensed under the terms of the GNU General Public License.
+You are free to use, copy, modify, etc. If you like the plugin and want
+to do something nice for me, please consider dropping a few clams in
+the tip-bucket.
+
+Copyright (C) 2010  Tom N Harris <tnharris@whoopdedo.org>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA

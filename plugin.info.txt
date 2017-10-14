@@ -1,0 +1,8 @@
+author  Tom N Harris
+email   tnharris@whoopdedo.org
+url     http://whoopdedo.org/doku/wiki/formatplus
+date    2012-06-03
+name    Format+ Syntax Plugin
+desc    Provides additional XHTML formatting syntax.
+license GPL2
+
