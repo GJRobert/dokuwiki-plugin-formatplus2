@@ -1,8 +1,8 @@
-author  Tom N Harris
-email   tnharris@whoopdedo.org
-url     http://whoopdedo.org/doku/wiki/formatplus
-date    2012-06-03
-name    Format+ Syntax Plugin
-desc    Provides additional XHTML formatting syntax.
+author  G.HS.Robert Ciang (a.k.a. MilchFlasche)
+email   Robertus0617@gmail.com
+url     https://github.com/GJRobert/dokuwiki-plugin-formatplus2
+date    2017-10-14
+name    Format+2 Syntax Plugin
+desc    Provides additional XHTML formatting syntax. (fork of Format+ plugin by Tom N Harris)
 license GPL2
 
