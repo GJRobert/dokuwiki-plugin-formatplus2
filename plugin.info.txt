@@ -1,7 +1,7 @@
-author  G.HS.Robert Ciang (a.k.a. MilchFlasche)
+author  Tom N Harris, G.HS.Robert Ciang
 email   Robertus0617@gmail.com
 url     https://github.com/GJRobert/dokuwiki-plugin-formatplus2
-date    2017-10-14
+date    2017-10-22
 name    Format+2 Syntax Plugin
 desc    Provides additional XHTML formatting syntax. (fork of Format+ plugin by Tom N Harris)
 license GPL2
