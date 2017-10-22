@@ -4,7 +4,7 @@ if(!defined('DOKU_INC')) die();
 
 require_once(DOKU_PLUGIN.'formatplus2/formatting.php');
 
-class syntax_plugin_formatplus_variableplus extends FormattingPlus_Syntax_Plugin {
+class syntax_plugin_formatplus2_variableplus extends FormattingPlus_Syntax_Plugin {
  
   function _getName() {
     return 'Variable+';

@@ -87,12 +87,12 @@ class FormattingPlus_Syntax_Plugin extends DokuWiki_Syntax_Plugin {
 
   function connectTo($mode) {
     if (!empty($this->pattern))
-     $this->Lexer->addEntryPattern($this->pattern, $mode, 'plugin_formatplus_'.$this->getPluginComponent());
+     $this->Lexer->addEntryPattern($this->pattern, $mode, 'plugin_formatplus2_'.$this->getPluginComponent());
   }
 
   function postConnect() {
     if (!empty($this->pattern))
-      $this->Lexer->addExitPattern($this->formatting['close'], 'plugin_formatplus_'.$this->getPluginComponent());
+      $this->Lexer->addExitPattern($this->formatting['close'], 'plugin_formatplus2_'.$this->getPluginComponent());
   }
 
   function handle($match, $state, $pos, &$handler){

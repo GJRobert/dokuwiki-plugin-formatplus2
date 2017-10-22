@@ -4,7 +4,7 @@ if(!defined('DOKU_INC')) die();
 
 require_once(DOKU_PLUGIN.'formatplus2/formatting.php');
 
-class syntax_plugin_formatplus_blockquoteplus extends FormattingPlus_Syntax_Plugin {
+class syntax_plugin_formatplus2_blockquoteplus extends FormattingPlus_Syntax_Plugin {
 
   var $disabled = false;
 
@@ -46,14 +46,14 @@ class syntax_plugin_formatplus_blockquoteplus extends FormattingPlus_Syntax_Plug
 
   function connectTo($mode) {
     if (!$this->disabled) {
-      $this->Lexer->addEntryPattern('<quote>(?=.*</quote>)', $mode, 'plugin_formatplus_blockquoteplus');
-      $this->Lexer->addEntryPattern('<quote [^>\r\n]+?>(?=.*</quote>)', $mode, 'plugin_formatplus_blockquoteplus');
+      $this->Lexer->addEntryPattern('<quote>(?=.*</quote>)', $mode, 'plugin_formatplus2_blockquoteplus');
+      $this->Lexer->addEntryPattern('<quote [^>\r\n]+?>(?=.*</quote>)', $mode, 'plugin_formatplus2_blockquoteplus');
     }
   }
 
   function postConnect() {
     if (!$this->disabled) {
-      $this->Lexer->addExitPattern('</quote>', 'plugin_formatplus_blockquoteplus');
+      $this->Lexer->addExitPattern('</quote>', 'plugin_formatplus2_blockquoteplus');
     }
   }
 

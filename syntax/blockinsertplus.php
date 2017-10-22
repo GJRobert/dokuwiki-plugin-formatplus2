@@ -4,7 +4,7 @@ if(!defined('DOKU_INC')) die();
 
 require_once(DOKU_PLUGIN.'formatplus2/formatting.php');
 
-class syntax_plugin_formatplus_blockinsertplus extends FormattingPlus_Syntax_Plugin {
+class syntax_plugin_formatplus2_blockinsertplus extends FormattingPlus_Syntax_Plugin {
 
   var $disabled = false;
 
@@ -46,15 +46,15 @@ class syntax_plugin_formatplus_blockinsertplus extends FormattingPlus_Syntax_Plu
 
   function connectTo($mode) {
     if (!$this->disabled) {
-      $this->Lexer->addEntryPattern('<ins>(?=.*</ins>)', $mode, 'plugin_formatplus_blockinsertplus');
-      $this->Lexer->addEntryPattern('<ins [^>\r\n]+? @[^>\r\n]+?>(?=.*</ins>)', $mode, 'plugin_formatplus_blockinsertplus');
-      $this->Lexer->addEntryPattern('<ins [^>\r\n]+?>(?=.*</ins>)', $mode, 'plugin_formatplus_blockinsertplus');
+      $this->Lexer->addEntryPattern('<ins>(?=.*</ins>)', $mode, 'plugin_formatplus2_blockinsertplus');
+      $this->Lexer->addEntryPattern('<ins [^>\r\n]+? @[^>\r\n]+?>(?=.*</ins>)', $mode, 'plugin_formatplus2_blockinsertplus');
+      $this->Lexer->addEntryPattern('<ins [^>\r\n]+?>(?=.*</ins>)', $mode, 'plugin_formatplus2_blockinsertplus');
     }
   }
 
   function postConnect() {
     if (!$this->disabled) {
-      $this->Lexer->addExitPattern('</ins>', 'plugin_formatplus_blockinsertplus');
+      $this->Lexer->addExitPattern('</ins>', 'plugin_formatplus2_blockinsertplus');
     }
   }
 

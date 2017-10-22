@@ -4,7 +4,7 @@ if(!defined('DOKU_INC')) die();
 
 require_once(DOKU_PLUGIN.'formatplus2/formatting.php');
 
-class syntax_plugin_formatplus_blockdeleteplus extends FormattingPlus_Syntax_Plugin {
+class syntax_plugin_formatplus2_blockdeleteplus extends FormattingPlus_Syntax_Plugin {
  
   var $disabled = false;
   var $no_classic = false;
@@ -50,16 +50,16 @@ class syntax_plugin_formatplus_blockdeleteplus extends FormattingPlus_Syntax_Plu
   function connectTo($mode) {
     if (!$this->disabled) {
       if (!$this->no_classic) {
-        $this->Lexer->addEntryPattern('<del>(?=.*</del>)', $mode, 'plugin_formatplus_blockdeleteplus');
+        $this->Lexer->addEntryPattern('<del>(?=.*</del>)', $mode, 'plugin_formatplus2_blockdeleteplus');
       }
-      $this->Lexer->addEntryPattern('<del [^>\r\n]+? @[^>\r\n]+?>(?=.*</del>)', $mode, 'plugin_formatplus_blockdeleteplus');
-      $this->Lexer->addEntryPattern('<del [^>\r\n]+?>(?=.*</del>)', $mode, 'plugin_formatplus_blockdeleteplus');
+      $this->Lexer->addEntryPattern('<del [^>\r\n]+? @[^>\r\n]+?>(?=.*</del>)', $mode, 'plugin_formatplus2_blockdeleteplus');
+      $this->Lexer->addEntryPattern('<del [^>\r\n]+?>(?=.*</del>)', $mode, 'plugin_formatplus2_blockdeleteplus');
     }
   }
 
   function postConnect() {
     if (!$this->disabled) {
-      $this->Lexer->addExitPattern('</del>', 'plugin_formatplus_blockdeleteplus');
+      $this->Lexer->addExitPattern('</del>', 'plugin_formatplus2_blockdeleteplus');
     }
   }
 

@@ -4,7 +4,7 @@ if(!defined('DOKU_INC')) die();
 
 require_once(DOKU_PLUGIN.'formatplus2/formatting.php');
 
-class syntax_plugin_formatplus_quoteplus extends FormattingPlus_Syntax_Plugin {
+class syntax_plugin_formatplus2_quoteplus extends FormattingPlus_Syntax_Plugin {
  
   var $disabled = false;
 
@@ -38,14 +38,14 @@ class syntax_plugin_formatplus_quoteplus extends FormattingPlus_Syntax_Plugin {
 
   function connectTo($mode) {
     if (!$this->disabled) {
-      $this->Lexer->addEntryPattern('\x22\x22=[^\x22\r\n]+?\|(?=.*\x22\x22)', $mode, 'plugin_formatplus_quoteplus');
-      $this->Lexer->addEntryPattern('\x22\x22(?=.*\x22\x22)', $mode, 'plugin_formatplus_quoteplus');
+      $this->Lexer->addEntryPattern('\x22\x22=[^\x22\r\n]+?\|(?=.*\x22\x22)', $mode, 'plugin_formatplus2_quoteplus');
+      $this->Lexer->addEntryPattern('\x22\x22(?=.*\x22\x22)', $mode, 'plugin_formatplus2_quoteplus');
     }
   }
  
   function postConnect() {
     if (!$this->disabled) {
-      $this->Lexer->addExitPattern('\x22\x22', 'plugin_formatplus_quoteplus');
+      $this->Lexer->addExitPattern('\x22\x22', 'plugin_formatplus2_quoteplus');
     }
   }
  

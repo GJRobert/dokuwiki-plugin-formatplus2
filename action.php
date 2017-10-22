@@ -8,7 +8,7 @@
 // must be run within DokuWiki
 if(!defined('DOKU_INC')) die();
 
-class action_plugin_formatplus extends DokuWiki_Action_Plugin {
+class action_plugin_formatplus2 extends DokuWiki_Action_Plugin {
 
   /**
    * register the eventhandlers
