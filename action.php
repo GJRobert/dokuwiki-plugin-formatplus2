@@ -166,7 +166,7 @@ class action_plugin_formatplus2 extends DokuWiki_Action_Plugin {
       $menu[] = array(
           'type'  => 'picker',
           'title' => $this->getLang('title'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/formatplus2.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/formatplus.png',
           'list'  => $buttons2,
           'block' => true
           );
@@ -174,7 +174,7 @@ class action_plugin_formatplus2 extends DokuWiki_Action_Plugin {
       $menu[] = array(
           'type'  => 'picker',
           'title' => $this->getLang('title'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/formatplus2.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/formatplus.png',
           'list'  => array_merge($buttons, $buttons2),
           'block' => true
           );
