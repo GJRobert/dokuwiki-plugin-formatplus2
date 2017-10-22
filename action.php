@@ -29,7 +29,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons[] = array(
           'type'  => 'format',
           'title' => $this->getLang('smallcaps'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/caps.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/caps.png',
           'open'  => '!!',
           'close' => '!!',
           'block' => false
@@ -38,7 +38,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons[] = array(
           'type'  => 'format',
           'title' => $this->getLang('sample'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/samp.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/samp.png',
           'open'  => '$$',
           'close' => '$$',
           'block' => false
@@ -47,7 +47,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons[] = array(
           'type'  => 'format',
           'title' => $this->getLang('variable'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/var.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/var.png',
           'open'  => '??',
           'close' => '??',
           'block' => false
@@ -56,7 +56,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons[] = array(
           'type'  => 'format',
           'title' => $this->getLang('keyboard'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/kbd.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/kbd.png',
           'open'  => '``',
           'close' => '``',
           'block' => false
@@ -65,7 +65,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons[] = array(
           'type'  => 'format',
           'title' => $this->getLang('definition'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/dfn.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/dfn.png',
           'open'  => '@@',
           'close' => '@@',
           'block' => false
@@ -74,7 +74,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons[] = array(
           'type'  => 'format',
           'title' => $this->getLang('citation'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/cite.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/cite.png',
           'open'  => '&&',
           'close' => '&&',
           'block' => false
@@ -83,7 +83,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons[] = array(
           'type'  => 'format',
           'title' => $this->getLang('inverse'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/inv.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/inv.png',
           'open'  => '/!',
           'close' => '!/',
           'block' => false
@@ -92,7 +92,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons[] = array(
           'type'  => 'format',
           'title' => $this->getLang('quote'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/q.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/q.png',
           'open'  => '""',
           'close' => '""',
           'block' => false
@@ -103,7 +103,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons2[] = array(
           'type'  => 'format',
           'title' => $this->getLang('blockquote'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/quote.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/quote.png',
           'open'  => '<quote >',
           'close' => '</quote>',
           'block' => true
@@ -112,7 +112,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons2[] = array(
           'type'  => 'format',
           'title' => $this->getLang('insert'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/ins.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/ins.png',
           'open'  => '/+',
           'close' => '+/',
           'block' => false
@@ -120,7 +120,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons2[] = array(
           'type'  => 'format',
           'title' => $this->getLang('blockinsert'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/insert.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/insert.png',
           'open'  => '<ins >',
           'close' => '</ins>',
           'block' => true
@@ -128,7 +128,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons2[] = array(
           'type'  => 'format',
           'title' => $this->getLang('delete'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/del.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/del.png',
           'open'  => '/-',
           'close' => '-/',
           'block' => false
@@ -136,7 +136,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons2[] = array(
           'type'  => 'format',
           'title' => $this->getLang('blockdelete'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/delete.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/delete.png',
           'open'  => '<del >',
           'close' => '</del>',
           'block' => true
@@ -146,7 +146,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons2[] = array(
           'type'  => 'format',
           'title' => $this->getLang('sub'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/sub.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/sub.png',
           'open'  => '/,',
           'close' => ',/',
           'block' => false
@@ -154,7 +154,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $buttons2[] = array(
           'type'  => 'format',
           'title' => $this->getLang('super'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/super.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/super.png',
           'open'  => '/^',
           'close' => '^/',
           'block' => false
@@ -166,7 +166,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $menu[] = array(
           'type'  => 'picker',
           'title' => $this->getLang('title'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/formatplus.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/formatplus2.png',
           'list'  => $buttons2,
           'block' => true
           );
@@ -174,7 +174,7 @@ class action_plugin_formatplus extends DokuWiki_Action_Plugin {
       $menu[] = array(
           'type'  => 'picker',
           'title' => $this->getLang('title'),
-          'icon'  => DOKU_BASE.'lib/plugins/formatplus/images/formatplus.png',
+          'icon'  => DOKU_BASE.'lib/plugins/formatplus2/images/formatplus2.png',
           'list'  => array_merge($buttons, $buttons2),
           'block' => true
           );

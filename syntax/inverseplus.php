@@ -2,7 +2,7 @@
 // must be run within Dokuwiki
 if(!defined('DOKU_INC')) die();
 
-require_once(DOKU_PLUGIN.'formatplus/formatting.php');
+require_once(DOKU_PLUGIN.'formatplus2/formatting.php');
 
 class syntax_plugin_formatplus_inverseplus extends FormattingPlus_Syntax_Plugin {
  
