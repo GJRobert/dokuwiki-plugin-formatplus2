@@ -49,7 +49,7 @@ class syntax_plugin_formatplus2_quoteplus extends FormattingPlus_Syntax_Plugin {
     }
   }
  
-  function handle($match, $state, $pos, &$handler){
+  function handle($match, $state, $pos, Doku_Handler $handler){
     switch ($state) {
       case DOKU_LEXER_ENTER:
         if (substr($match,2,1) == '=')
@@ -67,7 +67,7 @@ class syntax_plugin_formatplus2_quoteplus extends FormattingPlus_Syntax_Plugin {
     return array($state,$output);
   }
  
-  function render($format, &$renderer, $data) {
+  function render($format, Doku_Renderer $renderer, $data) {
     list($state,$output) = $data;
     if ($format == 'xhtml'){
       switch ($state) {
