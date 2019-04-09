@@ -95,7 +95,7 @@ class FormattingPlus_Syntax_Plugin extends DokuWiki_Syntax_Plugin {
       $this->Lexer->addExitPattern($this->formatting['close'], 'plugin_formatplus2_'.$this->getPluginComponent());
   }
 
-  function handle($match, $state, $pos, &$handler){
+  function handle($match, $state, $pos, Doku_Handler $handler){
     $formatting = $this->_getFormatting();
     if (empty($formatting)) return array(DOKU_LEXER_UNMATCHED,$match);
     if ($state != DOKU_LEXER_UNMATCHED) {
@@ -108,7 +108,7 @@ class FormattingPlus_Syntax_Plugin extends DokuWiki_Syntax_Plugin {
     return array($state,$output);
   }
 
-  function render($format, &$renderer, $data) {
+  function render($format, Doku_Renderer $renderer, $data) {
     list($state,$output) = $data;
     if ($format == 'xhtml'){
       switch ($state) {

@@ -13,7 +13,7 @@ class action_plugin_formatplus2 extends DokuWiki_Action_Plugin {
   /**
    * register the eventhandlers
    */
-  function register(&$contr){
+  function register(Doku_Event_Handler $contr){
     $contr->register_hook('TOOLBAR_DEFINE', 'AFTER', $this, 'toolbar_event', array());
   }
 
@@ -21,7 +21,7 @@ class action_plugin_formatplus2 extends DokuWiki_Action_Plugin {
    *
    * @author  Tom N Harris    <tnharris@whoopdedo.org>
    */
-  function toolbar_event(&$event, $param){
+  function toolbar_event(Doku_Event $event, $param){
     $disabled = explode(',',$this->getConf('disable_syntax'));
     $disabled = array_map('trim',$disabled);
     $buttons = array();
