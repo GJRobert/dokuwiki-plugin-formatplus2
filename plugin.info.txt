@@ -2,7 +2,7 @@ base    formatplus2
 author  Tom N Harris, G.HS.Robert Ciang
 email   Robertus0617@gmail.com
 url     https://github.com/GJRobert/dokuwiki-plugin-formatplus2
-date    2017-10-22
+date    2020-06-26
 name    Format+2 Syntax Plugin
 desc    Provides additional XHTML formatting syntax. (fork of Format+ plugin by Tom N Harris)
 license GPL2

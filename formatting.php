@@ -27,7 +27,7 @@ if (!defined('DOKU_LF')) define('DOKU_LF',"\n");
 
     License: GPL
     */
-class FormattingPlus_Syntax_Plugin extends DokuWiki_Syntax_Plugin {
+abstract class FormattingPlus_Syntax_Plugin extends DokuWiki_Syntax_Plugin {
 
   var $formatting = array();
   var $pattern = '';
